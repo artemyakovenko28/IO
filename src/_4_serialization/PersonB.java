@@ -1,10 +1,12 @@
-package serialization;
+package _4_serialization;
 
-public class PersonA {
+import java.io.Serializable;
+
+public class PersonB implements Serializable {
     private String name;
     private int age;
 
-    public PersonA(String name, int age) {
+    public PersonB(String name, int age) {
         this.name = name;
         this.age = age;
     }
@@ -19,7 +21,7 @@ public class PersonA {
 
     @Override
     public String toString() {
-        return "PersonA{" +
+        return "PersonB{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 '}';

@@ -1,16 +1,14 @@
-package serialization;
+package _4_serialization;
 
 import java.io.Serializable;
 
-public class PersonD implements Serializable{
+public class PersonC implements Serializable {
     private transient String name;
     private int age;
-    private Address address;
 
-    public PersonD(String name, int age, Address address) {
+    public PersonC(String name, int age) {
         this.name = name;
         this.age = age;
-        this.address = address;
     }
 
     public String getName() {
@@ -23,10 +21,9 @@ public class PersonD implements Serializable{
 
     @Override
     public String toString() {
-        return "PersonD{" +
+        return "PersonC{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
-                ", address=" + address +
                 '}';
     }
 }

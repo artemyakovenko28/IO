@@ -1,20 +1,23 @@
-package serialization;
+package _4_serialization;
 
 import java.io.*;
+import java.util.Arrays;
 
-public class App00{
+public class App01 {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
         ByteArrayOutputStream buff = new ByteArrayOutputStream();
         ObjectOutput out = new ObjectOutputStream(buff);
 
-        out.writeObject("Hello!");
+        out.writeObject(new PersonD("Mike", 45, new Address("street")));
         out.flush();
         out.close();
 
         byte[] rawData = buff.toByteArray();
-        System.out.println(rawData.length);
+        System.out.println(Arrays.toString(rawData));
+        System.out.println(new String(rawData, "UTF-8"));
 
         ObjectInput input = new ObjectInputStream(new ByteArrayInputStream(rawData));
-        System.out.println((String) input.readObject());
+        PersonD person = (PersonD) input.readObject();
+        System.out.println(person.toString());
     }
 }
