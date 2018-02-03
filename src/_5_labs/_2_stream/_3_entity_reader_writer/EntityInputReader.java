@@ -1,8 +1,8 @@
 package _5_labs._2_stream._3_entity_reader_writer;
 
-import labs._2_stream._2_entity_is_os.EntityInput;
-import labs._2_stream._2_entity_is_os.Person;
-import labs._2_stream._2_entity_is_os.Point;
+import _5_labs._2_stream._2_entity_is_os.EntityInput;
+import _5_labs._2_stream._2_entity_is_os.Person;
+import _5_labs._2_stream._2_entity_is_os.Point;
 
 import java.io.IOException;
 import java.io.Reader;

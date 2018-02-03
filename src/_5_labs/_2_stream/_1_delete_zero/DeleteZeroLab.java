@@ -1,6 +1,6 @@
 package _5_labs._2_stream._1_delete_zero;
 
-import labs._2_stream._4_strategy.BAOSWithStrategyWithoutCopying;
+import _5_labs._2_stream._4_strategy.BAOSWithStrategyWithoutCopying;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
